@@ -1,5 +1,31 @@
 
+# FastAPI Iris Prediction Lab
+
+This is the submission for the MLOps API Lab. The project implements a machine learning API using **FastAPI** to predict Iris flower species.
+
+## 🚀 Key Features & Changes
+
+### 1. Model Upgrade: Random Forest 🌲🌲
+Instead of using a simple Decision Tree, I upgraded the model architecture to a **Random Forest Classifier** (`n_estimators=100`).
+- **Why?** A Random Forest aggregates the votes of multiple decision trees, providing better accuracy and reducing the risk of overfitting compared to a single tree.
+- **Location:** Modified in `src/train.py`.
+
+### 2. Personalized Health Check 💓
+The root endpoint (`GET /`) has been customized to provide specific service status.
+- **Response:** `{"status": "healthy", "message": "Bohan's Iris Prediction API is running!"}`
+- **Location:** Modified in `src/main.py`.
+
+### 3. Clean Repository 🧹
+A `.gitignore` file was configured to exclude virtual environment files (`fastapi_lab1_env/`) and compiled Python files (`__pycache__/`), ensuring a clean and professional submission.
+
 ---
+
+## 🛠️ Setup & Installation
+
+### 1. Clone the repository
+```bash
+git clone [https://github.com/ChrisZhao5/FastAPI-Iris-Lab.git](https://github.com/ChrisZhao5/FastAPI-Iris-Lab.git)
+cd FastAPI-Iris-Lab---
 - Video Explanation: [FastAPI lab](https://www.youtube.com/watch?v=KReburHqRIQ&list=PLcS4TrUUc53LeKBIyXAaERFKBJ3dvc9GZ&index=4)
 - Blog: [FastAPI Lab-1](https://www.mlwithramin.com/blog/fastapi-lab1)
 
